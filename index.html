@@ -24,9 +24,39 @@
                 justify-content: center;
                 align-items: center;
             }
+            .page {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
             .logo {
-                margin-top: 20vh;
+                margin-top: 10vh;
                 width: 30vw;
+            }
+            a, a:visited {
+                text-decoration: none;
+                color: white;
+            }
+            .boxes {
+                margin-top: 10vh;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+            .box {
+                border-radius: 1vw;
+                padding: 2vw;
+                font-size: 2vw;
+                text-align: center;
+                background-color: #444444;
+            }
+            .box.light {
+                background-color: #999999;
+            }
+            .box:first-child {
+                margin-right: 20px;
             }
         </style>
     </head>
@@ -35,9 +65,16 @@
             <a href="https://github.com/traits-ts">
                 <img class="logo" src="logo.svg"/>
             </a>
-            <p/>
-            <a href="https://github.com/traits-ts/core">@traits-ts/core (Core)</a> |
-            <a href="https://github.com/traits-ts/stdlib">@traits-ts/stdlib (Standard Library)</a>
+            <div class="boxes">
+                <a class="box" href="https://npmjs.com/@traits-ts/core">
+                    <b>@traits-ts/core</b><br/>
+                    Core
+                </a>
+                <a class="box light" href="https://npmjs.com/@traits-ts/stdlib">
+                    <b>@traits-ts/stdlib</b><br/>
+                    Standard Library
+                </a>
+             </div>
         </div>
     </body>
     <script type="text/javascript">
